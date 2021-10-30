@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'survey/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<h1>{{question.question_t}}</h1>
+
+<ul>
+    {% for choice in question.choice_set.all %}
+    <li>{{choice.choice_text}}--{{choice.votes}} vote{{choice.votes|pluralize}}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'survey:detail' question.id %}">다시 투표하시겠습니까?</a>
+    <br><br>
+    <a href="{% url 'survey:index'%}">돌아가기</a>
+</body>
+</html>

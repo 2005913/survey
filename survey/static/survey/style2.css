@@ -1,0 +1,11 @@
+body{
+background: white url("images/background2.png") no-repeat;
+background-position: bottom;
+color:white;
+}
+
+a{
+    font-size: 14px;
+    color:white;
+    text-decoration:none;
+}

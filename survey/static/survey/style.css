@@ -1,0 +1,22 @@
+body {
+background: white url("images/background.jpg") no-repeat;
+background-position: right bottom;
+}
+li a {
+    color: #4a4112;
+    font-weight: bolder;
+    font-style: none;
+    text-decoration: none;
+    font-family:'나눔고딕','바탕체';
+}
+
+h1{
+color: #222222;
+}
+
+a{
+text-decoration: none;
+color: #252525;
+font-weight: bolder;
+font-size:14px;
+}
